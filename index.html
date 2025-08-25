@@ -5,159 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FUNDASOE - Fundación Deportiva y Social Ebenezer</title>
+  <link rel="icon" href="icono.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --azul-oscuro: #0d47a1;
-      --azul-claro: #1976d2;
-      --blanco: #ffffff;
-      --gris-fondo: #f4f4f4;
-      --sombra: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: var(--gris-fondo);
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(to right, var(--azul-oscuro), var(--azul-claro));
-      color: var(--blanco);
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      font-weight: 800;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-
-    nav {
-      background-color: var(--azul-claro);
-      padding: 15px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    nav a {
-      color: var(--blanco);
-      text-decoration: none;
-      font-weight: 600;
-      padding: 8px 12px;
-      border-radius: 4px;
-      transition: background 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #0d47a1;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-      background-color: var(--blanco);
-      margin-bottom: 30px;
-      border-radius: 12px;
-      box-shadow: var(--sombra);
-    }
-
-    section h2 {
-      color: var(--azul-oscuro);
-      font-size: 2rem;
-      margin-bottom: 20px;
-      border-left: 6px solid var(--azul-oscuro);
-      padding-left: 15px;
-    }
-
-    ul {
-      list-style: disc;
-      margin-left: 40px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: var(--sombra);
-      object-fit: cover;
-    }
-
-    .contacto {
-      background-color: #e3f2fd;
-      padding: 30px;
-      border-radius: 10px;
-    }
-
-    footer {
-      background-color: var(--azul-oscuro);
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
-
-      section h2 {
-        font-size: 1.5rem;
-      }
-
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav a {
-        margin: 5px 0;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-
-      section {
-        padding: 40px 15px;
-      }
-    }
-  </style>
-</head>
+  <link rel="stylesheet" href="Style.css">
 
 <body>
 
@@ -168,13 +19,58 @@
 
   <nav>
     <a href="#quienes-somos">¿Quiénes Somos?</a>
-    <a href="#vision">Visión</a>
     <a href="#objetivos">Objetivos</a>
-    <a href="#poblacion">Población</a>
-    <a href="#actividades">Actividades</a>
+    <a href="donar.html">Donar</a>
+    <a href="#quienes-somos">Actividades</a>
     <a href="#galeria">Galería</a>
     <a href="#contacto">Contacto</a>
+
   </nav>
+
+  <section class="video-banner">
+    <video autoplay muted loop playsinline>
+      <source src="tu-video.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+    <div class="overlay">
+      <h1>EL DEPORTE TRANSFORMA VIDAS</h1>
+      <p>Las condiciones en las que naces no definen tu futuro.</p>
+    </div>
+  </section>
+
+  <section class="slider-banner">
+    <img src="Slider2.jpeg" alt="Imagen 1" class="active">
+    <img src="Slider1.jpeg" alt="Imagen 2">
+
+    <div class="overlay">
+      <h1>EN LA VIDA Y EN LA CANCHA</h1>
+    </div>
+  </section>
+
+  <section id="objetivos" class="content-section">
+    <h2>CAMBIANDO PARADIGMAS</h2>
+    <p class="subtitle">
+      Transformamos la realidad de niños y jóvenes a través del deporte y la educación.
+      Cambiamos violencia y pobreza por disciplina, valores y sueños cumplidos.
+    </p>
+
+    <div class="content-grid">
+      <div class="content-img">
+        <img src="Star.jpg" alt="Niños jugando fútbol">
+      </div>
+      <div class="content-text">
+        <h4>DE LA CANCHA A LA VIDA</h4>
+        <h3>EL FÚTBOL ES NUESTRA HERRAMIENTA</h3>
+        <p>
+          Más que un deporte, es un camino para enseñar respeto, trabajo en equipo y perseverancia.
+          Queremos que cada niño y joven descubra su potencial y se convierta en agente de cambio
+          dentro de su comunidad.
+        </p>
+        <a href="#" class="btn">CONOCE MÁS</a>
+      </div>
+    </div>
+  </section>
+
 
   <section id="quienes-somos">
     <h2>¿Quiénes Somos?</h2>
@@ -184,8 +80,12 @@
       con propósito, en armonía con los principios del Evangelio, transformando así su calidad de vida y formando bases
       para construir sus sueños.
     </p>
+    <div class="content-img1">
+      <img src="Grupo.jpg" alt="Niños jugando fútbol">
+    </div>
   </section>
 
+  <!--
   <section id="vision">
     <h2>Visión</h2>
     <p>
@@ -225,6 +125,50 @@
       <li>Actividades de integración comunitaria para niños, jóvenes y familias.</li>
     </ul>
   </section>
+-->
+
+  <section class="ayuda">
+    <h2>¿CÓMO PUEDES AYUDAR?</h2>
+    <div class="ayuda-contenedor">
+
+      <!-- Primer bloque -->
+      <div class="ayuda-item">
+        <img src="Ilustracion3_540x-removebg-preview.png" alt="Apadrinando">
+        <h3>APADRINANDO</h3>
+        <p>
+          Mediante un modelo de suscripción puedes apoyar a los jóvenes de la fundación
+          para que tengan la oportunidad de <strong>estudiar y jugar fútbol</strong>.
+          Conoce los diferentes programas dando clic en el siguiente enlace:
+        </p>
+        <a href="donar.html" class="btn">APADRINA ACÁ</a>
+      </div>
+
+      <!-- Segundo bloque -->
+      <div class="ayuda-item">
+        <img src="Ilustracion2_540x-removebg-preview.png" alt="Donando">
+        <h3>DONANDO</h3>
+        <p>
+          Otra manera de apoyar a los jóvenes de la fundación es a través de donaciones únicas.
+          Conviértete en un <strong>Super Hincha, Hincha o Seguidor</strong> de Fútbol Pazífico dando clic en el
+          siguiente enlace:
+        </p>
+        <a href="donar.html" class="btn">DONA ACÁ</a>
+      </div>
+
+      <!-- Tercer bloque -->
+      <div class="ayuda-item">
+        <img src="Ilustracion1_540x-removebg-preview.png" alt="Productos">
+        <h3>ADQUIRIENDO NUESTROS PRODUCTOS</h3>
+        <p>
+          Adquiere los espectaculares productos de Fútbol Pazífico y sus marcas aliadas
+          y ayuda a financiar los programas <strong>educativos y deportivos</strong> de la Fundación dando clic acá:
+        </p>
+        <a href="donar.html" class="btn">COMPRA ACÁ</a>
+      </div>
+
+    </div>
+  </section>
+
 
   <section id="galeria">
     <h2>Galería de Imágenes</h2>
@@ -248,6 +192,16 @@
   <footer>
     <p>&copy; 2025 FUNDASOE - Fundación Deportiva y Social Ebenezer. Todos los derechos reservados.</p>
   </footer>
+  <script>
+    let slides = document.querySelectorAll(".slider-banner img");
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    }, 5000); 
+  </script>
 
 </body>
 
