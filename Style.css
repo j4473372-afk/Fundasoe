@@ -274,6 +274,11 @@ footer {
   gap: 40px;
   text-align: left;
 }
+@media (max-width: 768px) {
+  .content-img1 {
+    display: none;
+  }
+}
 
 .content-img {
   flex: 1;
@@ -461,3 +466,4 @@ footer {
   margin-bottom: 15px;
   color: #333;
 }
+
